@@ -12,7 +12,7 @@ class cal
         cout<<"몇 개의 원소를 할당하겠습니까? : ";
         cin >> input;
 
-        if((input>0||input==(int)input)&&input!='\0'){
+        if((input>0&&input==(int)input)&&input!='\0'){
             count=(int)input;a=new int[count];
         }
         else{cout<<"자연수를 입력하세요."<<endl;
