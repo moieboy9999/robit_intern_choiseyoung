@@ -13,7 +13,7 @@ class cal
         cin >> input;
         cout<<endl;
         
-        if(count<0||input!=(int)input){
+        if(input<0||input!=(int)input){
             cout<<"자연수를 입력하세요."<<endl;
             check=0;
         }
