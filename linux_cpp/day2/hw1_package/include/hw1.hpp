@@ -3,7 +3,7 @@ class cal
 {
     private:
     int max,min,sum=0,count=0,*a=NULL;
-    float avr,input=0;
+    float input=0;
 
     public:
     int check=0;
@@ -11,25 +11,24 @@ class cal
         
         cout<<"몇 개의 원소를 할당하겠습니까? : ";
         cin >> input;
-        cout<<endl;
-        
-        if(input<0||input!=(int)input){
-            cout<<"자연수를 입력하세요."<<endl;
-            check=0;
+
+        if((input>0||input==(int)input)&&input!='\0'){
+            count=(int)input;a=new int[count];
         }
-        else{count=(int)input;a=new int[count];}
+        else{cout<<"자연수를 입력하세요."<<endl;
+            check=0;}
 
         for (int i = 0; i < count; i++){
             cout<<"정수형 데이터 입력 : ";
             cin >> input;
-            if (input!=(int)input){
-                cout<<"정수형을 입력하세요.";
-                check=0;
-                break;
+            if (input==(int)input&&input!='\0'){
+                check=1;
+            a[i]=(int)input;
             }
             else{
-            check=1;
-            a[i]=(int)input;
+                cout<<"정수형을 입력하세요."<<endl;
+                check=0;
+                break;
             }
         }  
     }
