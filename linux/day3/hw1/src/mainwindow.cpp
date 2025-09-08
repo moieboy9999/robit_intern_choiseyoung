@@ -200,6 +200,7 @@ void MainWindow::on_pushButton_2_clicked()
             else if(data.back()=="ᆢ"){data.back()="ㆍ";}
             else{data.push_back("ㆍ");}
         } else{data.push_back("ㆍ");}
+         timeout=0; timer->start();
     }
     else if(lg == -1){
         if(sim == 0) { data.push_back("2"); }
