@@ -287,7 +287,8 @@ void MainWindow::on_pushButton_5_clicked()
         else{
             if(timeout==0){
                 if(data.back()=="ㄱ"){data.back()="ㅋ";}
-                else if(data.back()=="ㅋ"){data.back()="ㄱ";}
+                else if(data.back()=="ㅋ"){data.back()="ㄲ";}
+                else if(data.back()=="ㄲ"){data.back()="ㄱ";}
                 else{data.push_back("ㄱ");}
             } else{data.push_back("ㄱ");}
         }
@@ -379,7 +380,8 @@ void MainWindow::on_pushButton_6_clicked()
         else{
             if(timeout==0){
                 if(data.back()=="ㄷ"){data.back()="ㅌ";}
-                else if(data.back()=="ㅌ"){data.back()="ㄷ";}
+                else if(data.back()=="ㅌ"){data.back()="ㄸ";}
+                else if(data.back()=="ㄸ"){data.back()="ㄷ";}
                 else{data.push_back("ㄷ");}
             } else{data.push_back("ㄷ");}
         }
@@ -449,7 +451,8 @@ void MainWindow::on_pushButton_9_clicked()
         else{
             if(timeout==0){
                 if(data.back()=="ㅂ"){data.back()="ㅍ";}
-                else if(data.back()=="ㅍ"){data.back()="ㅂ";}
+                else if(data.back()=="ㅍ"){data.back()="ㅃ";}
+                else if(data.back()=="ㅃ"){data.back()="ㅂ";}
                 else{data.push_back("ㅂ");}
             } else{data.push_back("ㅂ");}
         }
@@ -495,7 +498,8 @@ void MainWindow::on_pushButton_12_clicked()
         else{
             if(timeout==0){
                 if(data.back()=="ㅅ"){data.back()="ㅎ";}
-                else if(data.back()=="ㅎ"){data.back()="ㅅ";}
+                else if(data.back()=="ㅎ"){data.back()="ㅆ";}
+                else if(data.back()=="ㅆ"){data.back()="ㅅ";}
                 else{data.push_back("ㅅ");}
             } else{data.push_back("ㅅ");}
         }
@@ -543,7 +547,8 @@ void MainWindow::on_pushButton_10_clicked()
         else{
             if(timeout==0){
                 if(data.back()=="ㅈ"){data.back()="ㅊ";}
-                else if(data.back()=="ㅊ"){data.back()="ㅈ";}
+                else if(data.back()=="ㅊ"){data.back()="ㅉ";}
+                else if(data.back()=="ㅉ"){data.back()="ㅈ";}
                 else{data.push_back("ㅈ");}
             } else{data.push_back("ㅈ");}
         }
@@ -621,8 +626,7 @@ void MainWindow::on_pushButton_17_clicked()
 
 void MainWindow::on_pushButton_15_clicked()
 {
-    if(lg==0){data.push_back(" ");timeout=1;}
-    else if(lg==1){
+    if(lg==1){
         if(data.empty()){ data.push_back("ㅇ"); }
         else{
             if(timeout==0){
