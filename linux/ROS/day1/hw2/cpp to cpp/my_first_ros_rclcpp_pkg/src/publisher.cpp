@@ -2,9 +2,9 @@
 
 MyNode::MyNode() : Node("p")
 {
-    publisher_S = this->create_publisher<std_msgs::msg::String>("S", 10);
-    publisher_I = this->create_publisher<std_msgs::msg::Int32>("I", 10);
-    publisher_F = this->create_publisher<std_msgs::msg::Float64>("F", 10);
+    publisher_S = this->create_publisher<std_msgs::msg::String>("tS", 10);
+    publisher_I = this->create_publisher<std_msgs::msg::Int32>("tI", 10);
+    publisher_F = this->create_publisher<std_msgs::msg::Float64>("tF", 10);
     timer_ = this->create_wall_timer(std::chrono::duration<double>(1.0), std::bind(&MyNode::timer_callback, this));
 
 }
