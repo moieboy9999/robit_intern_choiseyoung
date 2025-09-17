@@ -57,7 +57,7 @@ public:
   {
     LifecycleNode::on_activate(state);
 
-    RCUTILS_LOG_INFO_NAMED(get_name(), "on_activate() is called.");
+    RCLCPP_INFO(get_logger(), "on_activate() is called.");
     std::this_thread::sleep_for(2s);
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn::SUCCESS;
   }
@@ -67,7 +67,7 @@ public:
   {
     LifecycleNode::on_deactivate(state);
 
-    RCUTILS_LOG_INFO_NAMED(get_name(), "on_deactivate() is called.");
+    RCLCPP_INFO(get_logger(), "on_deactivate() is called.");
 
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn::SUCCESS;
   }
@@ -78,7 +78,7 @@ public:
     timer_.reset();
     pub_.reset();
 
-    RCUTILS_LOG_INFO_NAMED(get_name(), "on cleanup is called.");
+    RCLCPP_INFO(get_logger(), "on cleanup is called.");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn::SUCCESS;
   }
 
